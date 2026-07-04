@@ -1,0 +1,103 @@
+/* Tasty Bites palette — same tokens used across the course */
+:root {
+  --cream: #faf6ef;
+  --paper: #f3ecdf;
+  --espresso: #2b1d13;
+  --terracotta: #c2563a;
+  --sage: #7a8a6b;
+  --rule: #e4d9c5;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background: var(--cream);
+  color: var(--espresso);
+  font-family: "Inter", system-ui, sans-serif;
+  line-height: 1.6;
+  padding: 1.5rem;
+}
+
+.card {
+  width: 100%;
+  max-width: 420px;
+  background: var(--paper);
+  border-radius: 18px;
+  padding: 2.5rem 2rem;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(43, 29, 19, 0.12);
+}
+
+.avatar {
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  border: 3px solid var(--terracotta);
+  background: var(--cream);
+}
+
+h1 {
+  margin: 1rem 0 0.25rem;
+  font-family: "DM Serif Display", Georgia, serif;
+  font-size: 2rem;
+}
+
+.tagline {
+  margin: 0 0 1.75rem;
+  color: var(--sage);
+  font-size: 0.95rem;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.link {
+  display: block;
+  padding: 0.85rem 1rem;
+  border: 1px solid var(--rule);
+  border-radius: 10px;
+  background: var(--cream);
+  color: var(--espresso);
+  text-decoration: none;
+  font-weight: 600;
+  transition: transform 0.12s ease, border-color 0.12s ease;
+}
+
+.link:hover {
+  transform: translateY(-2px);
+  border-color: var(--terracotta);
+}
+
+.toggle {
+  margin-top: 1.75rem;
+  padding: 0.6rem 1.1rem;
+  border: none;
+  border-radius: 999px;
+  background: var(--terracotta);
+  color: var(--cream);
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.foot {
+  margin-top: 1.5rem;
+  color: var(--sage);
+}
+
+/* Dark mode — toggled by script.js */
+body.dark {
+  --cream: #1c130c;
+  --paper: #26190f;
+  --espresso: #f3ecdf;
+  --rule: #3a2a1c;
+}
