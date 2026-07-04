@@ -1,4 +1,4 @@
-# Tasty Bites — Learn Web Development from Scratch
+# Tasty Bites — Learn Web Development from Scratch 123
 
 Welcome! This course teaches you how to build a real website from absolute zero. By the end you will have built a **recipe blog called "Tasty Bites"** and you will understand HTML, CSS, JavaScript, TypeScript, and Tailwind CSS.
 
